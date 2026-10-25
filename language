@@ -33,3 +33,191 @@ MNU_OPTION = "Options";
 MNU_LOADG = "Load Game";
 MNU_SAVEG = "Save Game";
 MNU_QUITG = "Quit Game";
+
+// Merchant Stuff! The majority of this. :( - [Chei]
+
+// Categories!
+MERCH_CAT_ARTIFACT = "Artifacts";
+MERCH_CAT_VANILLA = "Vanilla";
+MERCH_CAT_UAS = "Ugly as Sin";
+MERCH_CAT_FOOD = "Foodstuffs";
+MERCH_CAT_DRINKS = "Beverages";
+MERCH_CAT_PACKS = "Packages";
+MERCH_CAT_MORTISMUNITIONS = "Mortis Munitions";
+MERCH_CAT_VIRID = "Virid Inc.";
+MERCH_CAT_ACECORP = "A.C.E. Corporation";
+MERCH_CAT_ICARUS = "Icarus Innovations";
+MERCH_CAT_PEPPERGRINDER = "Peppergrinder";
+MERCH_CAT_MEDICAL = "Medical";
+
+// Artifact
+MERCH_TAG_BLURSPHERE = "Blursphere";
+MERCH_FLAVOR_BLURSPHERE = "Using this is like herding cats, please take it away from me. I'm begging you.";
+
+// UaS
+MERCH_TAG_2FCART = "Second Flesh Cartridge";
+MERCH_FLAVOR_2FCART = "For what cures you of your ailments.";
+
+MERCH_TAG_UASGLOWSTICKS = "Glowstick";
+MERCH_FLAVOR_UASGLOWSTICKS = "Green, yummy looking and glowy! Do not consume. Contact poison control ASAP.";
+
+MERCH_TAG_UASFLARES = "Flare";
+MERCH_FLAVOR_UASFLARES = "You used to be able to pee on people with these bad boys!";
+
+MERCH_TAG_LLM = "Laser/Light Module";
+MERCH_FLAVOR_LLM = "Not to be confused with a large-language model. This one doesn't steal!";
+
+MERCH_TAG_GYROSTABILIZER = "Gyroscopic Stabilizer";
+MERCH_FLAVOR_GYROSTABILIZER = "To help with what your flabby little human arms suck at, recoil control!";
+
+MERCH_TAG_AMMOPOUCH = "Ammo Pouch";
+MERCH_FLAVOR_AMMOPOUCH = "For carrying all that 7mm you've been hoarding for 13 maps and never use.";
+
+MERCH_TAG_ASSAULTPACK = "Assault Pack";
+MERCH_FLAVOR_ASSAULTPACK = "Like a schoolbag, but pretty much just a schoolbag. This time in brown!";
+
+MERCH_FLAVOR_FOODRATION1 = "A flavorless dehydrated ration bar, intended to replace a single meal.";
+MERCH_TAG_FOODRATION1 = "Food Ration";
+
+MERCH_FLAVOR_WATERRATION1 = "A disposable tear-open water pouch, about equivalent to a single glass of water.";
+MERCH_TAG_WATERRATION1 = "Water Ration";
+
+MERCH_FLAVOR_WATERRATION2 = "Fizzy sugary cola goodness in a classic red aluminium can.";
+MERCH_TAG_WATERRATION2 = "Dr. Cola Soda";
+
+MERCH_FLAVOR_WATERRATION3 = "A can of lemon-flavored carbonated water.";
+MERCH_TAG_WATERRATION3 = "Lemon Fizz Soda";
+
+MERCH_FLAVOR_WATERRATION4 = "One of three Coffee Blends still legal in the Reformed United Kingdom.";
+MERCH_TAG_WATERRATION4 = "England Coffee";
+
+MERCH_FLAVOR_WATERRATION5 = "A bootlegged coffee pouch. Best Served Very Hot.";
+MERCH_TAG_WATERRATION5 = "Knox Coffee";
+
+MERCH_FLAVOR_WATERRATION6 = "A pouch of coffee served on space stations in Earth's orbit.";
+MERCH_TAG_WATERRATION6 = "Space Coffee";
+
+MERCH_TAG_FOODRATION2 = "Beef and Garlic Stroganoff";
+MERCH_FLAVOR_FOODRATION2 = "Tasty beef and hearty pasta in garlic cream sauce.";
+
+MERCH_TAG_FOODRATION3 = "Curry and Rice";
+MERCH_FLAVOR_FOODRATION3 = "Spicy red curry with rice and potatoes.";
+
+MERCH_TAG_FOODRATION4 = "Spaghetti with Meatballs";
+MERCH_FLAVOR_FOODRATION4 = "Old Faithful. Spaghetti and meatballs in a hearty marinara sauce.";
+
+MERCH_TAG_FOODRATION5 = "Beef Teriyaki on Rice";
+MERCH_FLAVOR_FOODRATION5 = "Tender shredded beef in a basic teriyaki sauce, mixed with white rice.";
+
+MERCH_TAG_FOODRATION6 = "Chili-Mac";
+MERCH_FLAVOR_FOODRATION6 = "Blue-box macaroni and 'cheese' mixed with chile con carne.";
+
+MERCH_TAG_FOODRATION7 = "Chicken and Dumplings";
+MERCH_FLAVOR_FOODRATION7 = "Chicken Dumplings with Vegetables.";
+
+MERCH_TAG_FOODRATION8 = "Enchilada Casserole";
+MERCH_FLAVOR_FOODRATION8 = "Enchilada Casserole with Red Sauce.";
+
+MERCH_TAG_FOODRATION9 = "Fireball Scramble";
+MERCH_FLAVOR_FOODRATION9 = "Hearty Fireball Breakfast Scramble.";
+
+MERCH_TAG_FOODRATION10 = "Mystery Mix MRE";
+MERCH_FLAVOR_FOODRATION10 = "An MRE that was assembled with whatever was available.";
+
+MERCH_FLAVOR_PACKS5 = "This is probably the saddest MRE you've ever seen, but... at least it comes with a toy!";
+MERCH_TAG_PACKS5 = "World's Worst MRE";
+
+MERCH_TAG_FOODRATION11 = "Lentil Chili";
+MERCH_FLAVOR_FOODRATION11 = "Spicy stewed lentils.";
+
+MERCH_TAG_FOODRATION12 = "Breakfast Hashbrowns";
+MERCH_FLAVOR_FOODRATION12 = "Crispy fried potato shavings, just as good as the restaurant.";
+
+MERCH_TAG_FOODRATION13 = "Cacodemon Giblets";
+MERCH_FLAVOR_FOODRATION13 = "Fully cooked cacodemon entrails, for the adventurous connoisseur.";
+
+// Peppergrinder
+MERCH_TAG_BOXCANNON               = "Box Cannon";
+MERCH_FLAVOR_BOXCANNON            = "HALT!";
+
+MERCH_TAG_FULGUR                  = "Fulgur Laser Machinegun";
+MERCH_FLAVOR_FULGUR               = "This will be DAKKA in 2013!";
+
+MERCH_TAG_GREELY                  = "Greely 12";
+MERCH_FLAVOR_GREELY               = "Might fit in your pockets.";
+
+MERCH_TAG_GUILLOTINE              = "Guillotine";
+MERCH_FLAVOR_GUILLOTINE           = "Chop, chop.";
+
+MERCH_TAG_HELZING                 = "Helzing";
+MERCH_FLAVOR_HELZING              = "In the name of the Lord!";
+
+MERCH_TAG_HLAR                    = "HLAR";
+MERCH_FLAVOR_HLAR                 = "Makes more noise and throws grenades, but that's about it.";
+
+MERCH_TAG_ILIB                    = "Irons Liberator";
+MERCH_FLAVOR_ILIB                 = "Liberator rifle in and out. Almost.";
+
+MERCH_TAG_LISA                    = "'Lisa' Plasma DMR";
+MERCH_FLAVOR_LISA                 = "This rifle has not been hit.";
+
+MERCH_TAG_LOTUS                   = "Lotus Rifle";
+MERCH_FLAVOR_LOTUS                = "Rifle, but it's really a revolver. Why?";
+
+MERCH_TAG_MAULER                  = "Mauler Frag Cannon";
+MERCH_FLAVOR_MAULER               = "Might turn you into a radioactive corpse over time, but who cares?";
+
+MERCH_TAG_ODDBALL                 = "Oddball";
+MERCH_FLAVOR_ODDBALL              = "Crank it up.";
+
+MERCH_TAG_OTIS5                   = "Otis-5";
+MERCH_FLAVOR_OTIS5                = "Feeling lucky, punk?";
+
+MERCH_TAG_P90                     = "BreakerTek P90";
+MERCH_FLAVOR_P90                  = "A veritable bullet-hose with no apparent downsides.";
+
+MERCH_TAG_PLASMAPISTOL            = "Plasma Pistol";
+MERCH_FLAVOR_PLASMAPISTOL         = "Don't overcharge it, this baby gets hot!";
+
+MERCH_TAG_BASTARDRIFLE            = "Bastard Rifle";
+MERCH_FLAVOR_BASTARDRIFLE         = "Has no familiar relationship with the bastard sword.";
+
+MERCH_TAG_RUBYMASER               = "Ruby Maser";
+MERCH_FLAVOR_RUBYMASER            = "It can even heat up leftover pizza! Once.";
+
+MERCH_TAG_SAWEDOFFSLAYER          = "Sawed-off Slayer";
+MERCH_FLAVOR_SAWEDOFFSLAYER       = "Size doesn't matter, right?";
+
+MERCH_TAG_SCOPEDREVOLVER          = "Scoped Revolver";
+MERCH_FLAVOR_SCOPEDREVOLVER       = "Only a dark lord would.";
+
+MERCH_TAG_SCOPEDSLAYER            = "Scoped Slayer";
+MERCH_FLAVOR_SCOPEDSLAYER         = "Budget sniper rifle.";
+
+MERCH_TAG_TROG                    = "TRO-G Rifle";
+MERCH_FLAVOR_TROG                 = "Blast from the past.";
+
+MERCH_TAG_VERA                    = "Vera";
+MERCH_FLAVOR_VERA                 = "Diet Vulcanette.";
+
+MERCH_TAG_WISEAU                  = "WF-60 Plasma Magnum";
+MERCH_FLAVOR_WISEAU               = "You're going to tear me apart if you don't buy this.";
+
+MERCH_TAG_YUREI                   = "Yurei High-Capacity SMG";
+MERCH_FLAVOR_YUREI                = "When 30 rounds isn't enough.";
+
+MERCH_TAG_ZM94                    = "ZM94 Sabrewolf Anti-Materiel Rifle";
+MERCH_FLAVOR_ZM94                 = "Great for assassinating MBTs and other force-equilizers.";
+
+MERCH_TAG_ZORCHER                 = "Zorcher";
+MERCH_FLAVOR_ZORCHER              = "These don't come with a cereal box. Sorry.";
+
+MERCH_TAG_BINOCULARS = "Binoculars";
+MERCH_FLAVOR_BINOCULARS = "Hey, quit peepin'!";
+
+// Misc
+MERCH_TAG_MICROCELL = "Microcell";
+MERCH_FLAVOR_MICROCELL = "Originally used for toys, now used for guns shaped like toys! And still toys.";
+
+MERCH_TAG_DEAGLEMAG = "Deagle XIX .355 Magazine";
+MERCH_FLAVOR_DEAGLEMAG = "Seven rounds of action-movie fun! Fun not included.";

@@ -1,4 +1,4 @@
-// CVAR Tweaks for Vanilla options
+// CVAR Tweaks for Vanilla options - [Tavi]
 server bool hd_nonecroghost = false;
 server bool hd_mapdrugremoval = true;
 server bool hd_disableliteamponexit = true;
@@ -21,4 +21,17 @@ server bool tt_noskulldamage = false;
 server bool tt_bvel = false;
 server int tt_bloodbagmult = 1;
 
+// Features - [Ted]
 server bool hd_vulcfixer = false;
+
+// Merchant Overhaul toggles. Just for the store types. - [Ted]
+server bool tt_mo_medical_enabled = true;
+server bool tt_mo_vanilla_enabled = true;
+server bool tt_mo_item_enabled = true;
+server bool tt_mo_mortismunitions_enabled = true;
+server bool tt_mo_viridinc_enabled = true;
+server bool tt_mo_1337weps_enabled = true;
+server bool tt_mo_icarus_enabled = true;
+server bool tt_mo_peppergrinder_enabled = true;
+server bool tt_mo_acecorp_enabled = true;
+server bool tt_mo_artifact_enabled = true;

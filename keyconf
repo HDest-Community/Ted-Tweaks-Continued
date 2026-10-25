@@ -1,2 +1,9 @@
 addmenukey "Hideous Barrel Purge" "summon hdpurgethebarrelsplease"
 alias "hd_barrelpurge" "summon hdpurgethebarrelsplease"
+
+addmenukey "DERP Hack Bind" "netevent derphack"
+addmenukey "HERP Hack Bind" "netevent herphack"
+addmenukey "Quick-use Radsuit" "use radsuit"
+addmenukey "Quick-use Blursphere" "use blursphere"
+addmenukey "Explode Doorbuster" "db 999"
+addmenukey "Query Doorbusters" "db 123"

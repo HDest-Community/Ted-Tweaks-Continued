@@ -10,8 +10,8 @@ class HealerImpSpawner : ClusterSpawner {
     default {
         ClusterSpawner.actorClass 'HealerImp';
         ClusterSpawner.maxSpawns 3;
-        ClusterSpawner.maxDist 128.0;
-        ClusterSpawner.MaxAttempts 10;
+        ClusterSpawner.maxDist 256.0;
+        ClusterSpawner.MaxAttempts 28;
     }
 }
 
@@ -19,7 +19,7 @@ class GroupedMarineSpawner : ClusterSpawner {
     default {
         ClusterSpawner.actorClass 'HDGoon';
         ClusterSpawner.maxSpawns 5;
-        ClusterSpawner.maxDist 128.0;
+        ClusterSpawner.maxDist 256.0;
         ClusterSpawner.MaxAttempts 10;
     }
 }
@@ -30,5 +30,14 @@ class BabuinHordeSpawner : ClusterSpawner {
         ClusterSpawner.maxSpawns 12;
         ClusterSpawner.maxDist 256.0;
         ClusterSpawner.MaxAttempts 22;
+    }
+}
+
+class SpectreHordeSpawner : ClusterSpawner {
+    default {
+        ClusterSpawner.actorClass 'SpecBabuin';
+        ClusterSpawner.maxSpawns 10;
+        ClusterSpawner.maxDist 512.0;
+        ClusterSpawner.MaxAttempts 40;
     }
 }

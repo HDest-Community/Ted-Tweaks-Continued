@@ -871,9 +871,25 @@ class HDStorageItem:HDWeapon abstract{
 
 
 	override bool IsBeingWorn(){return true;}
-	override int DisplayAmount(){return int(itembulk);}
-	override int GetSbarNum(){return int(itembulk);}
-
+	override int GetSbarNum(){
+			int ii=int(itembulk);
+			let sb=HDStatusBar(statusbar);
+			if(sb){
+				int mmm=int(maxcapacity);
+				int iii=mmm-ii;
+				if(iii<(mmm>>1)){
+					if(iii<(mmm>>2))sb.savedcolour=Font.CR_RED;
+					else sb.savedcolour=Font.CR_ORANGE;
+				}else sb.savedcolour=Font.CR_OLIVE;
+			}
+			return ii;
+		}
+	override int DisplayAmount(){
+		let sb=HDStatusBar(statusbar);
+		if(sb)sb.savedcolour=Font.CR_DARKGRAY;
+		return int(maxcapacity);
+	}
+	
 	array<string> selectableitems;
 
 
