@@ -1,7 +1,7 @@
 //-------------------------------------------------
 // Light Amplification Visor
 //-------------------------------------------------
-class PortableLiteAmp:HDMagAmmo replaces Infrared{
+class PortableLiteAmp:HDMagAmmo{
 	default{
 		//$Category "Gear/Hideous Destructor/Supplies"
 		//$Title "Light Amp"

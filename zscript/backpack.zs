@@ -92,6 +92,13 @@ class HDStorageItem:HDWeapon abstract{
 	double maxcapacity;property maxcapacity:maxcapacity;
 	int maxbunch;property maxbunch:maxbunch;
 
+	name defaultstorageitemlist;
+	property defaultstorageitemlist:defaultstorageitemlist;
+
+	default{
+		HDStorageItem.defaultstorageitemlist "HDStorageItemList";
+	}
+
 	//empty container still weighs something and takes up space
 	double minbulk;property minbulk:minbulk;
 	override double WeaponBulk(){
@@ -708,7 +715,7 @@ class HDStorageItem:HDWeapon abstract{
 			string params=whichitem[i].mid(3,whichitem[i].length());
 
 			if(refid=="???"){
-				RandomContents("HDStorageItemList",0.2,true);
+				RandomContents(defaultstorageitemlist,0.2,true);
 				continue;
 			}
 
@@ -837,7 +844,7 @@ class HDStorageItem:HDWeapon abstract{
 	}
 
 
-	void RandomContents(
+	virtual void RandomContents(
 		class<HDStorageItemList> listclass,
 		double proportion,
 		bool fromloadout
