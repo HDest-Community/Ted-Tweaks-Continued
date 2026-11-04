@@ -16,8 +16,19 @@ extend class HDPlayerPawn{
 		//which in turn nukes the data which is being checked in DamageMobj."
 		if(!self || health<1)return damage;
 
-		//don't do all this for voodoo dolls
-		if(!player)return super.DamageMobj(inflictor,source,damage,mod,flags,angle);
+		//don't do all this for...
+		if(
+			!player  //voodoo dolls
+			||(
+				//E1M8 end-level damage
+				mod=="None"
+				&&!inflictor
+				&&!source
+			)
+		){
+			if(player)AddBlackout(128,damage+16,16);
+			return super.DamageMobj(inflictor,source,damage,mod,flags,angle);
+		}
 
 		int originaldamage=damage;
 
@@ -116,11 +127,16 @@ extend class HDPlayerPawn{
 		if(source&&source.player)flags|=DMG_PLAYERATTACK;
 
 
-		//duck under crushing ceilings
 		if(
 			mod=="crush"
-			&&ceilingz<pos.z+height
-		)player.crouching=-1;
+		){
+			//duck under crushing ceilings
+			if(ceilingz<pos.z+height)player.crouching=-1;
+
+			//Doom's crushing damage never made sense. I give up.
+			//Punish the player with nothing more than an annoying delay.
+			if(!inflictor&&!source)return -1;
+		}
 
 
 		//process all items (e.g. armour) that may affect the damage
@@ -352,7 +368,9 @@ extend class HDPlayerPawn{
 
 		if(hd_debug&&player){
 			string st="the world";
+			string src="";
 			if(inflictor)st=inflictor.getclassname();
+			if(source)src="("..source.getclassname()..")";
 			A_Log(string.format("%s took %d %s damage from %s",
 				player.getusername(),
 				damage,
