@@ -977,6 +977,7 @@ class DERPController:HDWeapon{
 		return ddd;
 	}
 	static void GiveController(actor caller){
+		if(!caller)return;
 		caller.A_SetInventory("DERPController",1);
 		caller.findinventory("DERPController").binvbar=true;
 		let ddc=DERPController(caller.findinventory("DERPController"));
